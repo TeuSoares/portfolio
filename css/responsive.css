@@ -1,0 +1,249 @@
+/* Responsivo */
+@media (max-width: 283px) { 
+    .imgBanner h2{
+        font-size: 1em;
+    }
+    .tab span{
+        display: block;
+        margin-bottom: 8px;
+    }
+}
+
+@media (max-width: 365px) { 
+    #autor{
+        display: none;
+    }
+}
+
+@media (max-width: 767.98px) { 
+    /* Geral */
+    .container{
+        width: 100%;
+        padding: 0 15px;
+    }
+    .headline{
+        font-size: 2em;
+    }
+    .d-flex{
+        justify-content: center;
+    }
+    .d-none-mobile{
+        display: none;
+    }
+    .d-flex-project{
+        justify-content: center;
+    }
+
+    /* Header */
+    .container-nav{
+        width: 100%;
+        display: block;
+    }
+    .logo{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .logo i{
+        margin-right: 30px;
+    }
+    #open{
+        display: inline-block;
+    }
+    .links{
+        display: none;
+    }
+
+    /* Banner */
+    .imgBanner .container div{
+        width: 100%;
+    }
+    .imgBanner h1{
+        font-size: 2.5em;
+    }
+    #button_banner{
+        font-size: .9em;
+    }
+
+    .showRight{
+        transform: translate3d(-100px, 0, 0);
+    }
+    .startAnimationScroll{
+        transform: translate3d(0,0,0);
+    }
+
+    /* Sobre mim */
+    .imgPerfil{
+        display: none;
+    }
+    .about{
+        width: 100%;
+    }
+
+    /* Tecnologias */
+    .box-language{
+        width: 70px;
+        margin-right: 8px;
+        margin-left: 8px;
+    }
+    .box-language .name-language{
+        font-size: .7em;
+    }
+
+    /* Serviços */
+    .services{
+        margin: 10px 0;
+    }
+
+    /* Footer */
+    .width-small{
+        width: 100%;
+        padding: 60px 15px;
+    }
+    .margin{
+        margin: 60px 0;
+    }
+    .inline-block-contact{
+        display: block;
+        margin: 30px 0px;
+    }
+    .button_contact{
+        display: block;
+    }
+    .info-footer{
+        font-size: .9em;
+    }
+
+    /* Page Project_id */
+    .boxImgProject{
+        width: 100%;
+        height: auto;
+        overflow-y: hidden;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    /* Geral */
+    .container{
+        width: 100%;
+        padding: 0 30px;
+    }
+    .d-flex{
+        justify-content: center;
+    }
+    .d-none-mobile{
+        display: none;
+    }
+    .d-flex-project{
+        justify-content: center;
+    }
+
+    /* Header */
+    .container-nav{
+        width: 100%;
+        display: block;
+    }
+    .logo{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .logo i{
+        margin-right: 30px;
+    }
+    #open{
+        display: inline-block;
+    }
+    .links{
+        display: none;
+    }
+
+    /* Banner */
+    .imgBanner .container div{
+        width: 100%;
+    }
+
+    .showRight{
+        transform: translate3d(-100px, 0, 0);
+    }
+    .startAnimationScroll{
+        transform: translate3d(0,0,0);
+    }
+
+    /* Sobre mim */
+    .imgPerfil{
+        display: none;
+    }
+    .about{
+        width: 100%;
+    }
+
+    /* Tecnologias */
+    .box-language{
+        margin-right: 8px;
+        margin-left: 8px;
+    }
+
+    /* Servioços */
+    .services{
+        margin: 10px 10px;
+    }
+
+    /* Projetos */
+    .card-projects{
+        margin-right: 5px;
+    }
+
+     /* Page Project_id */
+     .boxImgProject{
+        width: 100%;
+        height: auto;
+        overflow-y: hidden;
+    }
+    
+}
+
+@media (min-width: 992px) and (max-width: 1138.98px) {
+    /* Geral */
+    .container{
+        width: 100%;
+        padding: 0 20px;
+    }
+
+    /* Header */
+    .container-nav{
+        width: 100%;
+    }
+
+    .showRight{
+        transform: translate3d(-100px, 0, 0);
+    }
+    .startAnimationScroll{
+        transform: translate3d(0,0,0);
+    }
+
+    /* Sobre mim */
+    .imgPerfil{
+        width: 260px;
+        height: 400px;
+        margin-right: 20px;
+    }
+
+    /* Serviços */
+    .services{
+        width: 235px;
+    }
+
+    /* Projetos */
+    .d-flex-project{
+        justify-content: center;
+    }
+    .card-projects{
+        margin-right: 5px;
+    }
+
+    .boxImgProject{
+        width: 470px;
+    }
+
+}
