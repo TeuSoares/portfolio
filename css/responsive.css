@@ -81,13 +81,18 @@
     }
 
     /* Tecnologias */
-    .box-language{
-        width: 70px;
-        margin-right: 8px;
-        margin-left: 8px;
+    .card-skills{
+        flex-direction: column;
     }
-    .box-language .name-language{
-        font-size: .7em;
+    .card-skills .skills-title {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+    .card-skills .skill{
+        width: 100%;
+    }
+    .card-skills .skill .badge {
+        margin-bottom: 1rem;
     }
 
     /* Serviços */
@@ -178,12 +183,6 @@
         width: 100%;
     }
 
-    /* Tecnologias */
-    .box-language{
-        margin-right: 8px;
-        margin-left: 8px;
-    }
-
     /* Servioços */
     .services{
         margin: 10px 10px;
@@ -245,5 +244,4 @@
     .boxImgProject{
         width: 470px;
     }
-
 }
