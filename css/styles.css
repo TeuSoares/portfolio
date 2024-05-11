@@ -331,6 +331,10 @@ nav{
     font-size: 1.5em;
     text-align: center;
 }
+.only_repository {
+    width: 100%;
+    text-align: center;
+}
 
 /* Footer */
 .width-small{
