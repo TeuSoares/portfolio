@@ -13,7 +13,7 @@
       name="keywords"
       content="sites, web, desenvolvimento, frontend, mateus soares, programador, front-end, full-stack, full stack, freelancer, freela, website, mobile, aplicativos"
     />
-    <meta name="copyright" content="Mateus Soares 2022" />
+    <meta name="copyright" content="Mateus Soares" />
     <link
       rel="shortcut icon"
       href="img/assets/favicon.png"
@@ -68,12 +68,17 @@
                     href="https://www.linkedin.com/in/mateus-soares-santos/"
                     target="_blank"
                   >
-                    <i class="fab fa-linkedin"></i>
+                    <i class="fab fa-linkedin-in"></i>
                   </a>
                 </li>
                 <li>
                   <a href="https://github.com/TeuSoares" target="_blank">
-                    <i class="fab fa-github-square"></i>
+                    <i class="fab fa-github"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://instagram.com/mateusoaresz" target="_blank">
+                    <i class="fab fa-instagram"></i>
                   </a>
                 </li>
               </ul>
@@ -103,10 +108,13 @@
                   href="https://www.linkedin.com/in/mateus-soares-santos/"
                   target="_blank"
                 >
-                  <i class="fab fa-linkedin"></i>
+                  <i class="fab fa-linkedin-in"></i>
                 </a>
                 <a href="https://github.com/TeuSoares" target="_blank">
-                  <i class="fab fa-github-square"></i>
+                  <i class="fab fa-github"></i>
+                </a>
+                <a href="https://instagram.com/mateusoaresz" target="_blank">
+                  <i class="fab fa-instagram"></i>
                 </a>
               </li>
             </ul>
@@ -132,222 +140,309 @@
           </div>
         </div>
       </div>
-      <section class="background-secundary padding" id="about">
+      <section class="background-primary padding" id="about">
         <div class="container">
-          <div class="infoSection">
-            <span class="textSection">Sobre mim</span>
-            <h1 class="headline showUp">Quem é Mateus</h1>
-            <span class="barraSection"></span>
-            <span class="em_section showLeft"
+          <div class="section-title">
+            <h2 class="headline showUp">Sobre mim</h2>
+            <span class="subtitle showLeft"
               >Conheça-me um pouco mais <span class="pointRed">...</span></span
             >
           </div>
           <div class="about">
             <div>
               <div class="imgPerfil showLeft">
-                <img src="img/assets/perfil.png" alt="Foto de perfil" />
+                <img
+                  src="img/assets/profile_primary.png"
+                  alt="Foto de perfil"
+                />
               </div>
             </div>
             <div class="showRight">
-              <p>
-                Entusiasta da tecnologia desde pequeno. Sempre fui muito curioso
-                e apaixonado por todo esse mundo.
-              </p>
-              <p>
-                Possuo experiência no desenvolvimento de aplicações web,
-                prezando sempre pela qualidade, segurança e manutenção do
-                código.
-              </p>
-              <p>
-                Atualmente, contribuo dentro de um time como desenvolvedor full
-                stack, ajudando outros desenvolvedores nos desafios técnicos,
-                propondo melhorias, visando a entrega das demandas e o
-                crescimento da empresa, junto com o time.
-              </p>
-              <p>
-                Meus objetivos para os próximos anos são ajudar outras empresas
-                a crescerem, construindo produtos de softwares escaláveis e de
-                alta qualidade, liderar projetos, e também lançando meus
-                próprios produtos que agreguem valor para o mercado.
-              </p>
+              <button
+                type="button"
+                class="about-button tab-active"
+                id="bioIDButton"
+                onclick="openTab('bioID')"
+              >
+                Bio
+              </button>
+              <button
+                type="button"
+                class="about-button"
+                id="experienceIDButton"
+                onclick="openTab('experienceID')"
+              >
+                Experiência
+              </button>
+              <button
+                type="button"
+                class="about-button"
+                id="educationIDButton"
+                onclick="openTab('educationID')"
+              >
+                Educação
+              </button>
+
+              <div id="bioID">
+                <p>
+                  Entusiasta da tecnologia desde pequeno e há 5 anos me
+                  aventurando nesse mundo da programação.
+                </p>
+                <p>
+                  Possuo experiência no desenvolvimento de aplicações web de
+                  ponta a ponta, prezando sempre pela qualidade, segurança e
+                  manutenção do código.
+                </p>
+                <p>
+                  Atualmente, contribuo dentro de um time como desenvolvedor
+                  full stack, ajudando outros desenvolvedores nos desafios
+                  técnicos, propondo melhorias, com o foco no crescimento da
+                  empresa.
+                </p>
+                <p>
+                  Meus objetivos para os próximos anos são ajudar outras
+                  empresas a crescerem, construindo produtos de softwares de
+                  qualidade, visando a entrega de resultados para seu público
+                  alvo e também lançando meus próprios produtos que agreguem
+                  valor para o mercado.
+                </p>
+              </div>
+
+              <div id="experienceID">
+                <div class="box-experience">
+                  <h4>Analista de Desenvolvimento de Sistemas</h4>
+                  <span>KaBuM! · 2024 - Atualmente</span>
+                  <ul>
+                    <li>- Realizar manutenções em um projeto ERP web</li>
+                    <li>- Desenvolver novos projetos internos</li>
+                    <li>
+                      - Atender as demandas solicitadas pelo time de negócios,
+                      sejam elas implementações de novas funcionalidades ou
+                      correções de bug
+                    </li>
+                    <li>
+                      - Tecnologias: Perl, JavaScript, Angular, jQuery, SQL,
+                      Git, Linux
+                    </li>
+                  </ul>
+                </div>
+                <div class="box-experience">
+                  <h4>Desenvolvedor Web</h4>
+                  <span>CRM Soluções · 2023 - 2024 (1 ano)</span>
+                  <ul>
+                    <li>- Implementações de novas features</li>
+                    <li>- Desenvolvimento de novos projetos</li>
+                    <li>- Realizar deploy em ambientes de teste e produção</li>
+                    <li>
+                      - Tecnologias: PHP, Laravel, TypeScript, Vue.js, Next.js,
+                      Git, SQL, Linux
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div id="educationID">
+                <div class="box-education">
+                  <h4>Técnico em Informática para Internet</h4>
+                  <span>Senac · 2019 - 2020 (1 ano e meio)</span>
+                  <ul>
+                    <li>- Desenvolvimento web e mobile</li>
+                    <li>- Lógica de programação</li>
+                    <li>- Design responsivo</li>
+                    <li>- Controle de versionamento</li>
+                    <li>- Documentação de testes de softwares</li>
+                    <li>- Modelagem de banco de dados relacional</li>
+                    <li>- Planejamentos de projetos</li>
+                    <li>
+                      - Tecnologias: HTML, CSS, JavaScript, jQuery, Bootstrap,
+                      PHP, MySQL, Git, Apache Cordova
+                    </li>
+                  </ul>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </section>
-      <section class="background-primary padding" id="skills">
-        <div class="infoSection">
-          <span class="textSection">Tecnologias</span>
-          <h1 class="headline showUp">Conhecimentos</h1>
-          <span class="barraSection"></span>
-          <span class="em_section showLeft"
-            >Alguns dos meus conhecimentos técnicos</span
+      <section class="background-secundary padding" id="skills">
+        <div class="section-title">
+          <h2 class="headline showUp">Conhecimentos</h2>
+          <span class="subtitle showLeft"
+            >Algumas das tecnologias que utilizo</span
           >
         </div>
-        <div class="container">
-          <div class="card-skills showLeft">
-            <div class="skills-title">
-              <h4>Front-end</h4>
+        <div class="container d-flex">
+          <div class="box-language showUp3s">
+            <div class="img-language">
+              <img src="img/assets/typescript-plain.svg" alt="TypeScript" />
             </div>
-            <div class="skill">
-              <div class="badge">JavaScript</div>
-              <div class="badge">TypeScript</div>
-              <div class="badge">React.js</div>
-              <div class="badge">Next.js</div>
-              <div class="badge">Vue.js</div>
-              <div class="badge">jQuery</div>
-              <div class="badge">Styled-components</div>
-              <div class="badge">Tailwind CSS</div>
-              <div class="badge">Jest</div>
-              <div class="badge">Cypress</div>
+            <div class="name-language">
+              <span>TypeScript</span>
             </div>
           </div>
-          <div class="card-skills showRight">
-            <div class="skills-title">
-              <h4>Back-end</h4>
+          <div class="box-language showUp4s">
+            <div class="img-language">
+              <img src="img/assets/react-original.svg" alt="React.js" />
             </div>
-            <div class="skill">
-              <div class="badge">PHP</div>
-              <div class="badge">Laravel</div>
-              <div class="badge">PHPUnit</div>
-              <div class="badge">Pest</div>
-              <div class="badge">API Rest</div>
-              <div class="badge">MySQL</div>
-              <div class="badge">SQL Server</div>
+            <div class="name-language">
+              <span>React.js</span>
             </div>
           </div>
-          <div class="card-skills showLeft">
-            <div class="skills-title">
-              <h4>Outros</h4>
+          <div class="box-language showUp">
+            <div class="img-language">
+              <img src="img/assets/nextjs-original.svg" alt="Next.js" />
             </div>
-            <div class="skill">
-              <div class="badge">Testes automatizados</div>
-              <div class="badge">SOLID</div>
-              <div class="badge">Docker</div>
-              <div class="badge">Linux</div>
-              <div class="badge">GIT</div>
-              <div class="badge">Programação Orientada a Objetos (POO)</div>
+            <div class="name-language">
+              <span>Next.js</span>
             </div>
           </div>
-        </div>
-      </section>
-      <section class="background-secundary padding" id="services">
-        <div class="container">
-          <div class="infoSection">
-            <span class="textSection">Serviços e Soluções</span>
-            <h1 class="headline showUp">O que faço</h1>
-            <span class="barraSection"></span>
-            <span class="em_section showLeft"
-              >Um pouco do que consigo fazer</span
-            >
+          <div class="box-language showUp">
+            <div class="img-language">
+              <img src="img/assets/vuejs-original.svg" alt="Vue" />
+            </div>
+            <div class="name-language">
+              <span>Vue.js</span>
+            </div>
           </div>
-          <div class="d-flex showRight" id="servicesID">
-            <div class="services">
-              <i class="fas fa-laptop-house icon-service"></i>
-              <h4>Criação de Sites</h4>
-              <span>
-                Desenvolvimento de sites modernos e responsivos, otimizados para
-                todos os dispositivos.
-              </span>
+          <div class="box-language showUp3s">
+            <div class="img-language">
+              <img src="img/assets/php-plain.svg" alt="PHP" />
             </div>
-            <div class="services">
-              <i class="fa-solid fa-mobile-screen icon-service"></i>
-              <h4>Aplicativos</h4>
-              <span>
-                Desenvolvimento de aplicativos móveis intuitivos e eficientes.
-              </span>
+            <div class="name-language">
+              <span>PHP</span>
             </div>
-            <div class="services">
-              <i class="fa-solid fa-laptop-code icon-service"></i>
-              <h4>Sistemas Web</h4>
-              <span>
-                Criação de sistemas web personalizados para atender às
-                necessidades específicas do seu negócio.
-              </span>
+          </div>
+          <div class="box-language showUp3s">
+            <div class="img-language">
+              <img src="img/assets/laravel-plain.svg" alt="Laravel" />
             </div>
-            <div class="services">
-              <i class="fa-solid fas fa-project-diagram icon-service"></i>
-              <h4>Criação de APIs</h4>
-              <span>
-                Desenvolvimento de APIs robustas e seguras para integração e
-                comunicação entre sistemas.
-              </span>
+            <div class="name-language">
+              <span>Laravel</span>
+            </div>
+          </div>
+          <div class="box-language showUp3s">
+            <div class="img-language">
+              <img src="img/assets/docker-plain.svg" alt="Docker" />
+            </div>
+            <div class="name-language">
+              <span>Docker</span>
+            </div>
+          </div>
+          <div class="box-language showUp4s">
+            <div class="img-language">
+              <img src="img/assets/mysql-plain.svg" alt="MySQL" />
+            </div>
+            <div class="name-language">
+              <span>MySQL</span>
+            </div>
+          </div>
+          <div class="box-language showUp">
+            <div class="img-language">
+              <img src="img/assets/git-plain.svg" alt="GIT" />
+            </div>
+            <div class="name-language">
+              <span>GIT</span>
             </div>
           </div>
         </div>
       </section>
       <section class="background-primary padding" id="projects">
         <div class="container">
-          <div class="infoSection">
-            <span class="textSection">Portfólio</span>
-            <h1 class="headline showUp">Projetos</h1>
-            <span class="barraSection"></span>
-            <span class="em_section showLeft"
+          <div class="section-title">
+            <h2 class="headline showUp">Projetos</h2>
+            <span class="subtitle showLeft"
               >Confira alguns dos projetos que já desenvolvi</span
             >
           </div>
           <div class="d-flex-project">
             <div class="card-projects showLeft">
-              <div class="imgProject">
-                <img src="img/projects/siteMusic.png" alt="" />
+              <div class="itens-project">
+                <div class="imgProject">
+                  <img src="img/projects/siteMusic.png" alt="" />
+                </div>
+                <h3 class="title-project">Gerenciador de Músicas</h3>
+                <span class="description-project">
+                  Sistema de gerenciamento de músicas, onde o usuário pode
+                  gerenciar suas músicas favoritas em apenas um lugar.
+                </span>
+                <div>
+                  <span class="badge-skill">Next.js</span>
+                  <span class="badge-skill">TypeScript</span>
+                  <span class="badge-skill">Tailwind CSS</span>
+                  <span class="badge-skill">PHP</span>
+                  <span class="badge-skill">Laravel</span>
+                  <span class="badge-skill">MySql</span>
+                </div>
+                <div class="links-project">
+                  <a
+                    target="_blank"
+                    href="https://github.com/TeuSoares/music-website"
+                    class="link"
+                    ><i class="fab fa-github"></i> Repositório</a
+                  >
+                </div>
               </div>
-              <h3 class="title-project">Gerenciador de Músicas</h3>
-              <span class="description-project">
-                Sistema de gerenciamento de músicas, onde o usuário pode
-                gerenciar suas músicas favoritas em apenas um lugar.
-              </span>
-              <span class="tecnologias"
-                >Next.js, TypeScript, Tailwind CSS, PHP, Laravel, MySql</span
-              >
-              <a
-                target="_blank"
-                href="https://github.com/TeuSoares/music-website"
-                class="link-project only_repository"
-                ><i class="fab fa-github"></i> Repositório</a
-              >
             </div>
             <div class="card-projects showLeft">
-              <div class="imgProject">
-                <img src="img/projects/WolfGames.png" alt="" />
+              <div class="itens-project">
+                <div class="imgProject">
+                  <img src="img/projects/WolfGames.png" alt="" />
+                </div>
+                <h3 class="title-project">Wolf Games</h3>
+                <span class="description-project">
+                  Um E-Commerce Gamer, onde foi desenvolvido todo o fluxo do
+                  usuário da escolha do produto até a compra.
+                </span>
+                <div>
+                  <span class="badge-skill">React.js</span>
+                  <span class="badge-skill">TypeScript</span>
+                  <span class="badge-skill">Context API</span>
+                  <span class="badge-skill">PHP</span>
+                  <span class="badge-skill">MySQL</span>
+                  <span class="badge-skill">JWT</span>
+                </div>
+                <div class="links-project">
+                  <a
+                    target="_blank"
+                    href="https://www.youtube.com/watch?v=XLFm07fELYM"
+                    class="link"
+                    ><i class="fab fa-youtube"></i> Vídeo</a
+                  >
+                  <a
+                    target="_blank"
+                    href="https://github.com/TeuSoares/wolf_games/"
+                    class="link"
+                    ><i class="fab fa-github"></i> Repositório</a
+                  >
+                </div>
               </div>
-              <h3 class="title-project">Wolf Games</h3>
-              <span class="description-project">
-                Wolf Games é um E-Commerce Gamer. Desenvolvi todo o fluxo do
-                usuário da escolha do produto até a compra.
-              </span>
-              <span class="tecnologias"
-                >React.js, TypeScript, Context API, PHP, MySQL, JWT</span
-              >
-              <a
-                target="_blank"
-                href="https://www.youtube.com/watch?v=XLFm07fELYM"
-                class="link-project"
-                ><i class="fab fa-youtube"></i> Visualize</a
-              >
-              <a
-                target="_blank"
-                href="https://github.com/TeuSoares/wolf_games/"
-                class="link-project"
-                ><i class="fab fa-github"></i> Repositório</a
-              >
             </div>
             <div class="card-projects showLeft">
-              <div class="imgProject">
-                <img src="img/projects/crud_users.png" alt="" />
+              <div class="itens-project">
+                <div class="imgProject">
+                  <img src="img/projects/crud_users.png" alt="" />
+                </div>
+                <h3 class="title-project">Gerenciador de Usuários</h3>
+                <span class="description-project">
+                  Um sistema web que realiza todo o fluxo de um usuário:
+                  Cadastro, Edição, Atualização, Autenticação e Listagem.
+                </span>
+                <div>
+                  <span class="badge-skill">React.js</span>
+                  <span class="badge-skill">TypeScript</span>
+                  <span class="badge-skill">React Query</span>
+                  <span class="badge-skill">PHP</span>
+                  <span class="badge-skill">MySQL</span>
+                </div>
+                <div class="links-project">
+                  <a
+                    target="_blank"
+                    href="https://github.com/TeuSoares/crud_users/"
+                    class="link"
+                    ><i class="fab fa-github"></i> Repositório</a
+                  >
+                </div>
               </div>
-              <h3 class="title-project">Gerenciador de Usuários</h3>
-              <span class="description-project">
-                Um sistema web que realiza todo o fluxo de um usuário: Cadastro,
-                Edição, Atualização, Autenticação e Listagem.
-              </span>
-              <span class="tecnologias"
-                >React.js, TypeScript, React Query, PHP, MySQL</span
-              >
-              <a
-                target="_blank"
-                href="https://github.com/TeuSoares/crud_users/"
-                class="link-project only_repository"
-                ><i class="fab fa-github"></i> Repositório</a
-              >
             </div>
           </div>
         </div>
@@ -355,11 +450,9 @@
     </main>
     <footer class="background-secundary" id="contact">
       <div class="width-small padding">
-        <div class="infoSection">
-          <span class="textSection">Contato</span>
-          <h1 class="headline showUp">Entre em Contato</h1>
-          <span class="barraSection"></span>
-          <span class="em_section showLeft">Vamos Conversar?</span>
+        <div class="section-title">
+          <h2 class="headline showUp">Entre em Contato</h2>
+          <span class="subtitle showLeft">Vamos Conversar?</span>
         </div>
         <p class="showLeft">
           Se você chegou até aqui, não deixe de entrar em contato comigo. Estou
@@ -370,25 +463,9 @@
           <div class="inline-block-contact">
             <a
               target="_blank"
-              href="https://api.whatsapp.com/send?phone=5519998317785"
-              class="whatsapp button_contact"
-              ><i class="fab fa-whatsapp"></i> WhatsApp</a
-            >
-          </div>
-          <div class="inline-block-contact">
-            <a
-              target="_blank"
-              href="https://www.linkedin.com/in/mateus-soares-santos/"
-              class="linkedin button_contact"
-              ><i class="fa-brands fa-linkedin"></i> Linkedin</a
-            >
-          </div>
-          <div class="inline-block-contact">
-            <a
-              target="_blank"
               href="mailto:mateussoares115@hotmail.com"
               class="email button_contact"
-              ><i class="fa-solid fa-envelope"></i> E-mail</a
+              ><i class="fa-solid fa-envelope"></i> Enviar uma mensagem</a
             >
           </div>
         </div>

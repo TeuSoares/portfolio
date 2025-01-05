@@ -81,20 +81,33 @@ $("#close").click(function () {
   $("#close").hide();
 });
 
-// Tab services and process
-$("#services-active").click(function () {
-  $("#services-active").addClass("tab-active");
-  $("#services-active").removeClass("tab-disabled");
-  $("#process-active").removeClass("tab-active");
-  $("#process-active").addClass("tab-disabled");
-  $("#servicesID").show();
-  $("#processID").hide();
-});
-$("#process-active").click(function () {
-  $("#process-active").addClass("tab-active");
-  $("#process-active").removeClass("tab-disabled");
-  $("#services-active").removeClass("tab-active");
-  $("#services-active").addClass("tab-disabled");
-  $("#processID").show();
-  $("#servicesID").hide();
-});
+// About
+const openTab = (selectedTab) => {
+  const tabs = [
+    {
+      id: "bioID",
+      button: "bioIDButton",
+    },
+    {
+      id: "experienceID",
+      button: "experienceIDButton",
+    },
+    {
+      id: "educationID",
+      button: "educationIDButton",
+    },
+  ];
+
+  tabs.forEach((tab) => {
+    const tabID = $(`#${tab.id}`);
+    const tabButton = $(`#${tab.button}`);
+
+    if (tab.id === selectedTab) {
+      tabButton.addClass("tab-active");
+      tabID.show();
+    } else {
+      tabButton.removeClass("tab-active");
+      tabID.hide();
+    }
+  });
+};

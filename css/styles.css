@@ -54,7 +54,7 @@ nav {
   margin-right: 40px;
 }
 .social-icons {
-  font-size: 1.5em;
+  font-size: 1.3em;
   list-style: none;
 }
 .social-icons li {
@@ -104,7 +104,7 @@ nav {
   align-items: center;
   display: flex;
   background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.6)),
-    url(../img/assets/background.jpg);
+    url(../img/assets/background2.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -163,106 +163,77 @@ nav {
 }
 .about {
   display: flex;
-  align-items: center;
+}
+.about-button {
+  border: none;
+  background-color: transparent;
+  min-width: 50px;
+  padding: 0px 1rem;
+  min-height: 40px;
+  border-radius: 5px;
+  color: #fff;
+  font-weight: 600;
+  transition: 0.3s ease-out;
+  cursor: pointer;
+  margin-bottom: 1rem;
+  margin-right: 0.7rem;
+}
+.about-button:hover {
+  background-color: rgb(206, 52, 52, 0.1);
+  color: #e71c1c;
+}
+.tab-active {
+  background-color: rgb(206, 52, 52, 0.1);
+  color: #e71c1c;
+}
+#experienceID,
+#educationID {
+  display: none;
+}
+#experienceID .box-experience,
+#educationID .box-education {
+  margin-bottom: 1.5rem;
+}
+#experienceID h4,
+#educationID h4 {
+  color: #e71c1c;
+  margin-bottom: 1.5rem;
+}
+#experienceID span,
+#educationID span {
+  color: #e4e4e7;
+  padding: 0.3rem;
+  font-size: 0.9em;
+  border-radius: 5px;
+}
+#experienceID ul,
+#educationID ul {
+  color: #e4e4e7;
+  line-height: 1.7;
+  font-size: 0.9em;
+  margin-top: 1.5rem;
+  list-style: none;
 }
 
 /* Tecnologias */
-.card-skills {
+.box-language {
+  width: 110px;
   border-radius: 5px;
-  border: 1px solid #ce3434;
-  background-color: #09090b;
-  transition: 1s all ease;
   display: flex;
-  margin-bottom: 1.5rem;
-}
-.card-skills:hover {
-  border: 1px solid #e4e4e7;
-}
-.card-skills .skills-title {
-  width: 150px;
-  background-color: #ce3434;
-  padding: 10px;
-  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 1.5rem;
 }
-.card-skills h4 {
-  color: #e4e4e7;
-  font-size: 0.9em;
+.img-language img {
+  width: 75px;
 }
-.card-skills .skill {
-  width: 990px;
-  color: #e4e4e7;
-  font-size: 0.9em;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  padding: 8px;
-}
-.card-skills .skill .badge {
-  background-color: #09090b;
-  padding: 5px;
-  border-radius: 5px;
-  margin-right: 8px;
-  border: 1px solid #e4e4e7;
-}
-
-/* Serviços */
-.services {
-  width: 275px;
-  padding: 30px;
-  border-radius: 5px;
-  border: 1px solid #ce3434;
-  background-color: #040405;
-  transition: 1s all ease;
-}
-.services:hover {
-  border: 1px solid #e4e4e7;
-}
-.services i {
-  color: #ce3434;
-}
-.services .icon-service {
-  font-size: 3em;
-  margin-bottom: 20px;
-}
-.services h4 {
-  color: #e4e4e7;
-  font-size: 1.1em;
-  margin-bottom: 20px;
-}
-.services span {
-  display: inline-block;
-  color: #e4e4e7;
-  font-size: 0.9em;
-}
-.tab {
+.box-language .name-language {
+  margin-top: 1rem;
   text-align: center;
-  margin-top: 20px;
-}
-.tab span {
-  padding: 10px 15px;
-  margin: 0 5px;
-  font-size: 1em;
-  border-radius: 2px;
-  cursor: pointer;
-  transition: all 0.5s ease;
   color: #e4e4e7;
-}
-.tab span:hover {
-  background-color: #ce3434;
-  border: 1px solid #ce3434;
-}
-.tab-active {
-  background-color: #ce3434;
-  border: 1px solid #ce3434;
-}
-.tab-disabled {
-  border: 1px solid #e4e4e7;
-}
-#processID {
-  display: none;
+  font-weight: bold;
+  font-size: 0.87em;
 }
 
 /* Projetos */
@@ -273,23 +244,19 @@ nav {
 }
 .card-projects {
   width: 360px;
+  height: 470px;
   padding: 30px;
   border-radius: 5px;
   border: 1px solid #ce3434;
   transition: 1s all ease;
   background-color: #09090b;
-  margin-bottom: 30px;
 }
-.card-projects:hover {
-  border: 1px solid #e4e4e7;
-}
-.card-projects .imgProject,
-h3,
-span {
-  margin-bottom: 22px;
-}
-.card-projects span {
-  display: block;
+.itens-project {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1rem;
 }
 .card-projects .imgProject {
   height: 150px;
@@ -308,35 +275,35 @@ span {
   line-height: 1.6;
   font-size: 0.9em;
 }
-.card-projects .tecnologias {
-  color: #ce3434;
-  font-weight: bold;
-  font-size: 0.85em;
-}
-.card-projects .link-project {
+.card-projects .badge-skill {
   display: inline-block;
   color: #fff;
+  padding: 0.22rem;
+  border-radius: 0.3rem;
+  background-color: rgb(206, 52, 52, 0.5);
+  font-weight: bold;
+  font-size: 0.73em;
+  margin-bottom: 0.5rem;
+}
+.card-projects .links-project {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+.card-projects .links-project .link {
+  width: 50%;
+  color: #fff;
   text-decoration: none;
-  padding: 10px 15px;
+  padding: 10px;
   margin-bottom: 5px;
-  margin-right: 6.5px;
-  background: none;
   border: 1px solid #fff;
   border-radius: 5px;
   transition: 0.6s all ease;
+  text-align: center;
 }
-.card-projects .link-project:hover {
+.card-projects .links-project .link:hover {
   background-color: #ce3434;
   border: 1px solid #ce3434;
-}
-.card-projects .coming-soon .title-coming-soon {
-  color: #fff;
-  font-size: 1.5em;
-  text-align: center;
-}
-.only_repository {
-  width: 100%;
-  text-align: center;
 }
 
 /* Footer */
@@ -353,19 +320,13 @@ span {
   text-decoration: none;
   background-color: #ce3434;
   color: #fff;
-  border-radius: 5px;
+  border-radius: 20px;
   padding: 10px 25px;
   transition: all 0.5s ease;
   font-size: 1em;
   font-weight: bold;
 }
-.whatsapp:hover {
-  background-color: #2e7c1b;
-}
 .email:hover {
-  background-color: #5a1c8d;
-}
-.linkedin:hover {
   background-color: #1572a8;
 }
 .info-footer {
@@ -393,23 +354,4 @@ span {
 }
 #button-footer:hover {
   background-color: #9e3535;
-}
-
-/* Page Project_id */
-.boxImgProject {
-  width: 365px;
-  height: 300px;
-  margin-bottom: 20px;
-  overflow-y: scroll;
-}
-.boxImgProject img {
-  width: 100%;
-}
-.boxImgProject::-webkit-scrollbar {
-  width: 3px;
-  background-color: #1b1b1b;
-}
-.boxImgProject::-webkit-scrollbar-thumb {
-  background-color: #ce3434;
-  border-radius: 5px;
 }

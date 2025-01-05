@@ -1,247 +1,215 @@
 /* Responsivo */
-@media (max-width: 283px) { 
-    .imgBanner h2{
-        font-size: 1em;
-    }
-    .tab span{
-        display: block;
-        margin-bottom: 8px;
-    }
+@media (max-width: 283px) {
+  .imgBanner h2 {
+    font-size: 1em;
+  }
 }
 
-@media (max-width: 365px) { 
-    #autor{
-        display: none;
-    }
+@media (max-width: 365px) {
+  #autor {
+    display: none;
+  }
+
+  /* Projetos */
+  .card-projects .title-project {
+    font-size: 1rem;
+  }
+  .card-projects .description-project {
+    font-size: 0.8em;
+  }
+  .card-projects .badge-skill {
+    font-size: 0.7em;
+  }
 }
 
-@media (max-width: 767.98px) { 
-    /* Geral */
-    .container{
-        width: 100%;
-        padding: 0 15px;
-    }
-    .headline{
-        font-size: 2em;
-    }
-    .d-flex{
-        justify-content: center;
-    }
-    .d-none-mobile{
-        display: none;
-    }
-    .d-flex-project{
-        justify-content: center;
-    }
+@media (max-width: 372px) {
+  .card-projects .links-project {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .card-projects .links-project .link {
+    width: 100%;
+    padding: 5px;
+  }
+}
 
-    /* Header */
-    .container-nav{
-        width: 100%;
-        display: block;
-    }
-    .logo{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-    .logo i{
-        margin-right: 30px;
-    }
-    #open{
-        display: inline-block;
-    }
-    .links{
-        display: none;
-    }
+@media (max-width: 767.98px) {
+  /* Geral */
+  .container {
+    width: 100%;
+    padding: 0 15px;
+  }
+  .section-title .headline {
+    font-size: 1.5em;
+  }
+  .d-flex {
+    justify-content: center;
+  }
+  .d-none-mobile {
+    display: none;
+  }
+  .d-flex-project {
+    justify-content: center;
+    gap: 1rem;
+  }
 
-    /* Banner */
-    .imgBanner .container div{
-        width: 100%;
-    }
-    .imgBanner h1{
-        font-size: 2.5em;
-    }
-    #button_banner{
-        font-size: .9em;
-    }
+  /* Header */
+  .container-nav {
+    width: 100%;
+    display: block;
+  }
+  .logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .logo i {
+    margin-right: 30px;
+  }
+  #open {
+    display: inline-block;
+  }
+  .links {
+    display: none;
+  }
 
-    .showRight{
-        transform: translate3d(-100px, 0, 0);
-    }
-    .startAnimationScroll{
-        transform: translate3d(0,0,0);
-    }
+  /* Banner */
+  .imgBanner .container div {
+    width: 100%;
+  }
+  .imgBanner h1 {
+    font-size: 2.5em;
+  }
+  #button_banner {
+    font-size: 0.9em;
+  }
 
-    /* Sobre mim */
-    .imgPerfil{
-        display: none;
-    }
-    .about{
-        width: 100%;
-    }
+  .showRight {
+    transform: translate3d(-100px, 0, 0);
+  }
+  .startAnimationScroll {
+    transform: translate3d(0, 0, 0);
+  }
 
-    /* Tecnologias */
-    .card-skills{
-        flex-direction: column;
-    }
-    .card-skills .skills-title {
-        width: 100%;
-        margin-bottom: 1rem;
-    }
-    .card-skills .skill{
-        width: 100%;
-    }
-    .card-skills .skill .badge {
-        margin-bottom: 1rem;
-    }
+  /* Sobre mim */
+  .imgPerfil {
+    display: none;
+  }
+  .about {
+    width: 100%;
+  }
 
-    /* Serviços */
-    .services{
-        margin: 10px 0;
-    }
-
-    /* Footer */
-    .width-small{
-        width: 100%;
-        padding: 60px 15px;
-    }
-    .margin{
-        margin: 60px 0;
-    }
-    .inline-block-contact{
-        display: block;
-        margin: 30px 0px;
-    }
-    .button_contact{
-        display: block;
-    }
-    .info-footer{
-        font-size: .9em;
-    }
-
-    /* Page Project_id */
-    .boxImgProject{
-        width: 100%;
-        height: auto;
-        overflow-y: hidden;
-    }
+  /* Footer */
+  .width-small {
+    width: 100%;
+    padding: 60px 15px;
+  }
+  .margin {
+    margin: 60px 0;
+  }
+  .inline-block-contact {
+    display: block;
+    margin: 30px 0px;
+  }
+  .button_contact {
+    display: block;
+  }
+  .info-footer {
+    font-size: 0.9em;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 991.98px) {
-    /* Geral */
-    .container{
-        width: 100%;
-        padding: 0 30px;
-    }
-    .d-flex{
-        justify-content: center;
-    }
-    .d-none-mobile{
-        display: none;
-    }
-    .d-flex-project{
-        justify-content: center;
-    }
+  /* Geral */
+  .container {
+    width: 100%;
+    padding: 0 30px;
+  }
+  .d-flex {
+    justify-content: center;
+  }
+  .d-none-mobile {
+    display: none;
+  }
+  .d-flex-project {
+    justify-content: center;
+  }
 
-    /* Header */
-    .container-nav{
-        width: 100%;
-        display: block;
-    }
-    .logo{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-    .logo i{
-        margin-right: 30px;
-    }
-    #open{
-        display: inline-block;
-    }
-    .links{
-        display: none;
-    }
+  /* Header */
+  .container-nav {
+    width: 100%;
+    display: block;
+  }
+  .logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .logo i {
+    margin-right: 30px;
+  }
+  #open {
+    display: inline-block;
+  }
+  .links {
+    display: none;
+  }
 
-    /* Banner */
-    .imgBanner .container div{
-        width: 100%;
-    }
+  /* Banner */
+  .imgBanner .container div {
+    width: 100%;
+  }
 
-    .showRight{
-        transform: translate3d(-100px, 0, 0);
-    }
-    .startAnimationScroll{
-        transform: translate3d(0,0,0);
-    }
+  .showRight {
+    transform: translate3d(-100px, 0, 0);
+  }
+  .startAnimationScroll {
+    transform: translate3d(0, 0, 0);
+  }
 
-    /* Sobre mim */
-    .imgPerfil{
-        display: none;
-    }
-    .about{
-        width: 100%;
-    }
+  /* Sobre mim */
+  .imgPerfil {
+    display: none;
+  }
+  .about {
+    width: 100%;
+  }
 
-    /* Servioços */
-    .services{
-        margin: 10px 10px;
-    }
-
-    /* Projetos */
-    .card-projects{
-        margin-right: 5px;
-    }
-
-     /* Page Project_id */
-     .boxImgProject{
-        width: 100%;
-        height: auto;
-        overflow-y: hidden;
-    }
-    
+  /* Projetos */
+  .d-flex-project {
+    gap: 1rem;
+  }
 }
 
 @media (min-width: 992px) and (max-width: 1138.98px) {
-    /* Geral */
-    .container{
-        width: 100%;
-        padding: 0 20px;
-    }
+  /* Geral */
+  .container {
+    width: 100%;
+    padding: 0 20px;
+  }
 
-    /* Header */
-    .container-nav{
-        width: 100%;
-    }
+  /* Header */
+  .container-nav {
+    width: 100%;
+  }
 
-    .showRight{
-        transform: translate3d(-100px, 0, 0);
-    }
-    .startAnimationScroll{
-        transform: translate3d(0,0,0);
-    }
+  .showRight {
+    transform: translate3d(-100px, 0, 0);
+  }
+  .startAnimationScroll {
+    transform: translate3d(0, 0, 0);
+  }
 
-    /* Sobre mim */
-    .imgPerfil{
-        width: 260px;
-        height: 400px;
-        margin-right: 20px;
-    }
+  /* Sobre mim */
+  .imgPerfil {
+    width: 260px;
+    height: 400px;
+    margin-right: 20px;
+  }
 
-    /* Serviços */
-    .services{
-        width: 235px;
-    }
-
-    /* Projetos */
-    .d-flex-project{
-        justify-content: center;
-    }
-    .card-projects{
-        margin-right: 5px;
-    }
-
-    .boxImgProject{
-        width: 470px;
-    }
+  /* Projetos */
+  .d-flex-project {
+    justify-content: center;
+    gap: 1rem;
+  }
 }
