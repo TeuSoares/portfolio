@@ -67,6 +67,8 @@ $(document).ready(function () {
 
   const currentYear = new Date().getFullYear();
   $("#year").text(currentYear);
+
+  $("#experience-time").text(currentYear - 2019);
 });
 
 // Navbar Mobile
