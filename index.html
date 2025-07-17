@@ -129,7 +129,7 @@
             <h3 class="showUp">Olá, eu sou</h3>
             <h1 class="showLeft">Mateus Soares</h1>
             <h2 class="showLeft">
-              Ajudando empresas a construírem produtos de qualidade<span
+              Transformando Ideias em Realidade Através do Código<span
                 class="pointRed"
                 >.</span
               >
@@ -144,9 +144,7 @@
         <div class="container">
           <div class="section-title">
             <h2 class="headline showUp">Sobre mim</h2>
-            <span class="subtitle showLeft"
-              >Conheça-me um pouco mais <span class="pointRed">...</span></span
-            >
+            <span class="subtitle showLeft">Conheça-me um pouco mais</span>
           </div>
           <div class="about">
             <div>
@@ -210,7 +208,7 @@
 
               <div id="experienceID">
                 <div class="box-experience">
-                  <h4>Analista de Desenvolvimento de Sistemas</h4>
+                  <h4>Desenvolvedor Full Stack</h4>
                   <span>KaBuM! · 2024 - Atualmente</span>
                   <ul>
                     <li>- Manutenção e evolução de um sistema ERP web.</li>
@@ -364,7 +362,7 @@
                 <div class="imgProject">
                   <img src="img/projects/siteMusic.png" alt="" />
                 </div>
-                <h3 class="title-project">Gerenciador de Músicas</h3>
+                <h3 class="title-project">Site de Músicas</h3>
                 <span class="description-project">
                   Sistema de gerenciamento de músicas, onde o usuário pode
                   gerenciar suas músicas favoritas em apenas um lugar.
@@ -406,12 +404,13 @@
                   <span class="badge-skill">JWT</span>
                 </div>
                 <div class="links-project">
-                  <a
-                    target="_blank"
-                    href="https://www.youtube.com/watch?v=XLFm07fELYM"
-                    class="link"
-                    ><i class="fab fa-youtube"></i> Vídeo</a
+                  <button
+                    type="button"
+                    class="link openModal"
+                    data-url="https://www.youtube.com/embed/XLFm07fELYM"
                   >
+                    <i class="fab fa-youtube"></i> Vídeo
+                  </button>
                   <a
                     target="_blank"
                     href="https://github.com/TeuSoares/wolf_games/"
@@ -448,10 +447,100 @@
                 </div>
               </div>
             </div>
+            <div class="card-projects showLeft">
+              <div class="itens-project">
+                <div class="imgProject">
+                  <img src="img/projects/reservation.png" alt="" />
+                </div>
+                <h3 class="title-project">Fazer reservas</h3>
+                <span class="description-project">
+                  Site de reservas para um restaurante. O usuário pode fazer
+                  reservas de mesa e receber a confirmação por e-mail.
+                </span>
+                <div>
+                  <span class="badge-skill">Nuxt.js</span>
+                  <span class="badge-skill">TypeScript</span>
+                  <span class="badge-skill">Tailwind CSS</span>
+                  <span class="badge-skill">Laravel</span>
+                  <span class="badge-skill">Docker</span>
+                  <span class="badge-skill">MySQL</span>
+                </div>
+                <div class="links-project">
+                  <a
+                    target="_blank"
+                    href="https://github.com/TeuSoares/reservation-management/"
+                    class="link"
+                    ><i class="fab fa-github"></i> Repositório</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="card-projects showLeft">
+              <div class="itens-project">
+                <div class="imgProject">
+                  <img src="img/projects/spotfolio.png" alt="" />
+                </div>
+                <h3 class="title-project">Spotfolio</h3>
+                <span class="description-project">
+                  Um SaaS onde o usuário pode ter um mini site profissional para
+                  divulgar seus links, portfólio e serviços oferecidos.
+                </span>
+                <div>
+                  <span class="badge-skill">Next.js</span>
+                  <span class="badge-skill">TypeScript</span>
+                  <span class="badge-skill">Tailwind CSS</span>
+                  <span class="badge-skill">Zod</span>
+                  <span class="badge-skill">React Query</span>
+                  <span class="badge-skill">Laravel</span>
+                  <span class="badge-skill">Docker</span>
+                  <span class="badge-skill">MySQL</span>
+                </div>
+                <div class="links-project">
+                  <button
+                    type="button"
+                    class="link openModal"
+                    data-url="https://www.youtube.com/embed/iqe1uEbtHyI"
+                  >
+                    <i class="fab fa-youtube"></i> Vídeo
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="card-projects showLeft">
+              <div class="itens-project">
+                <div class="imgProject">
+                  <img src="img/projects/customer_management.png" alt="" />
+                </div>
+                <h3 class="title-project">Gerenciador de Clientes</h3>
+                <span class="description-project">
+                  Uma área administrativa para o usuário conseguir gerenciar
+                  seus clientes: Cadastro, Edição, Listagem e Exclusão.
+                </span>
+                <div>
+                  <span class="badge-skill">Next.js</span>
+                  <span class="badge-skill">TypeScript</span>
+                  <span class="badge-skill">Tailwind CSS</span>
+                  <span class="badge-skill">React Query</span>
+                  <span class="badge-skill">PHP</span>
+                  <span class="badge-skill">JWT</span>
+                  <span class="badge-skill">Docker</span>
+                  <span class="badge-skill">MySQL</span>
+                </div>
+                <div class="links-project">
+                  <a
+                    target="_blank"
+                    href="https://github.com/TeuSoares/customer-management"
+                    class="link"
+                    ><i class="fab fa-github"></i> Repositório</a
+                  >
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
     </main>
+
     <footer class="background-secundary" id="contact">
       <div class="width-small padding">
         <div class="section-title">
@@ -486,6 +575,21 @@
         </div>
       </div>
     </footer>
+
+    <div id="videoModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <iframe
+          id="youtubeVideo"
+          width="100%"
+          height="100%"
+          frameborder="0"
+          allow="autoplay; encrypted-media"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </div>
+
     <script src="js/jquery.js"></script>
     <script src="js/app.js"></script>
   </body>

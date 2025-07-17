@@ -113,3 +113,19 @@ const openTab = (selectedTab) => {
     }
   });
 };
+
+// Modal
+$(".openModal").click(function () {
+  const baseYoutubeURL = $(this).data("url");
+  const autoplayURL = `${baseYoutubeURL}?autoplay=1`;
+  $("#youtubeVideo").attr("src", autoplayURL);
+  $("#videoModal").fadeIn();
+});
+
+// Fechar modal ao clicar fora ou no botão X
+$(".close, #videoModal").click(function (e) {
+  if (!$(e.target).is(this) && !$(e.target).hasClass("close")) return;
+  $("#videoModal").fadeOut(function () {
+    $("#youtubeVideo").attr("src", ""); // Para o vídeo
+  });
+});
