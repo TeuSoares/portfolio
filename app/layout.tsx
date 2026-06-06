@@ -33,24 +33,6 @@ export const metadata: Metadata = {
     icon: "/favicon.ico",
     shortcut: "/favicon.ico",
   },
-
-  openGraph: {
-    title: "Portfólio // Mateus Soares",
-    description:
-      "Transformando Ideias em Realidade Através do Código. Conheça meus projetos mais recentes.",
-    url: "https://codesparta.com.br",
-    siteName: "Mateus Soares Portfólio",
-    locale: "pt_BR",
-    type: "website",
-    images: [
-      {
-        url: "/img/assets/background.jpg",
-        width: 1200,
-        height: 630,
-        alt: "Mateus Soares Portfólio Preview",
-      },
-    ],
-  },
 };
 
 export default function RootLayout({
