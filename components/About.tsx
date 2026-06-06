@@ -94,7 +94,10 @@ export default function About() {
   const journeyYears = new Date().getFullYear() - entryYear;
 
   return (
-    <section id="about" className="bg-bg-primary py-24">
+    <section
+      id="about"
+      className="bg-bg-primary py-24 border-b border-white/10"
+    >
       <div className="max-w-285 mx-auto px-4">
         <SectionTitle title="Sobre mim" subtitle="Conheça-me um pouco mais" />
 

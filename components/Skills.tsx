@@ -42,7 +42,10 @@ const SKILLS_DATA: Skill[] = [
 
 export default function Skills() {
   return (
-    <section id="skills" className="bg-bg-secondary py-24">
+    <section
+      id="skills"
+      className="bg-bg-secondary py-24 border-b border-white/10"
+    >
       <div className="max-w-285 mx-auto px-4">
         <SectionTitle
           title="Conhecimentos"

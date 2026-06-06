@@ -153,7 +153,7 @@ export default function Navbar() {
             : "max-h-0 opacity-0 invisible"
         }`}
       >
-        <div className="mx-4 mt-2 p-6 bg-bg-secondary/95 backdrop-blur-lg border border-white/5 rounded-2xl shadow-xl">
+        <div className="mx-4 mt-2 p-6 bg-bg-secondary/95 backdrop-blur-lg border border-white/10 rounded-2xl shadow-xl">
           <ul className="flex flex-col gap-4 text-[1.1rem] font-medium text-zinc-300 list-none">
             <li>
               <a

@@ -104,7 +104,10 @@ export default function Projects() {
   const [modalConfig, setModalConfig] = useState({ isOpen: false, url: "" });
 
   return (
-    <section id="projects" className="bg-bg-primary py-24">
+    <section
+      id="projects"
+      className="bg-bg-primary py-24 border-b border-white/10"
+    >
       <div className="max-w-285 mx-auto px-4">
         <SectionTitle
           title="Projetos"
