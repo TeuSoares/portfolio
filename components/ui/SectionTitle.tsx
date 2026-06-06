@@ -15,7 +15,7 @@ export default function SectionTitle({ title, subtitle }: SectionTitleProps) {
       >
         {title}
       </h2>
-      <span className="block text-zinc-400 text-sm mt-6 mb-12">{subtitle}</span>
+      <span className="block text-zinc-400 text-md mt-6 mb-12">{subtitle}</span>
     </div>
   );
 }
