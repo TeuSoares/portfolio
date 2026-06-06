@@ -139,7 +139,7 @@ function ProjectCard({
   onOpenVideo: (url: string) => void;
 }) {
   return (
-    <div className="w-full max-w-90 min-h-125 p-7 rounded-[5px] border border-white/10 transition-all duration-300 group hover:border-brand bg-bg-secondary flex flex-col justify-between">
+    <div className="w-full max-w-90 min-h-125 p-7 rounded-[5px] border border-white/30 transition-all duration-300 group hover:border-brand bg-bg-secondary flex flex-col justify-between">
       <div className="flex flex-col grow">
         <div className="h-37.5 w-full relative overflow-hidden rounded-[5px] shrink-0">
           <Image

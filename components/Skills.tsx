@@ -55,7 +55,7 @@ export default function Skills() {
             return (
               <div
                 key={idx}
-                className="w-28 h-28 md:w-32 md:h-32 bg-bg-primary/40 border border-white/10 rounded-xl flex flex-col items-center justify-center gap-3 transition-all duration-300 group hover:border-brand hover:bg-bg-primary"
+                className="w-28 h-28 md:w-32 md:h-32 bg-bg-primary/40 border border-white/30 rounded-xl flex flex-col items-center justify-center gap-3 transition-all duration-300 group hover:border-brand hover:bg-bg-primary"
               >
                 <SkillIcon
                   size={40}
