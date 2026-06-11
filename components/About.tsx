@@ -15,7 +15,7 @@ const experiencesData = [
     isCurrent: false,
     description: [
       "Implementação de novas features e desenvolvimento de novos sistemas web.",
-      "Orquestração e automação de deploys em ambientes de homologação e produção.",
+      "Realizar deploys em ambientes de homologação e produção.",
     ],
     technologies: [
       "PHP",
@@ -37,13 +37,14 @@ const experiencesData = [
       "Manutenção, evolução e otimização de arquitetura de sistema ERP corporativo.",
       "Desenvolvimento de novos projetos e ferramentas internas.",
       "Atendimento às demandas do time de negócios, incluindo a implementação de novas funcionalidades e correções de bugs.",
-      "Desenvolvimento de microsserviços",
+      "Evolução e manutenção de microsserviços",
     ],
     technologies: [
       "Python",
       "FastAPI",
+      "React.js",
+      "Typescript",
       "Perl",
-      "JavaScript",
       "Angular",
       "jQuery",
       "SQL",
@@ -103,7 +104,7 @@ export default function About() {
 
         <div className="flex flex-col lg:flex-row items-center lg:items-start gap-12 lg:gap-16 max-w-275 mx-auto">
           <div className="shrink-0 w-64 h-64 md:w-80 md:h-80 relative select-none">
-            <div className="w-full h-full relative rounded-full border border-white/10 p-2 bg-zinc-900/30 backdrop-blur-sm">
+            <div className="w-full h-full relative rounded-full border border-white/20 p-2 bg-zinc-900/30 backdrop-blur-sm">
               <div className="w-full h-full relative rounded-full overflow-hidden">
                 <Image
                   src="/img/assets/profile.png"

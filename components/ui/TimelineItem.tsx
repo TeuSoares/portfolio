@@ -34,7 +34,7 @@ export default function TimelineItem({
         className={`px-2.5 py-0.5 rounded text-xs inline-block mb-3 font-medium ${
           isCurrent
             ? "bg-brand/10 text-brand-hover"
-            : "bg-zinc-800 text-zinc-400"
+            : "bg-zinc-800 text-zinc-300"
         }`}
       >
         {business} · {period}

@@ -11,7 +11,7 @@ interface BadgeProps {
 
 export default function Badge({ children, variant = "clean" }: BadgeProps) {
   const variantStyles: Record<BadgeVariant, string> = {
-    clean: "bg-zinc-800/30 text-zinc-300",
+    clean: "bg-zinc-800/50 text-zinc-300",
     brand: "bg-brand/20 text-zinc-200",
     zinc: "bg-zinc-800/50 text-zinc-400",
   };
