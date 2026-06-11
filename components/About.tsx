@@ -104,7 +104,7 @@ export default function About() {
 
         <div className="flex flex-col lg:flex-row items-center lg:items-start gap-12 lg:gap-16 max-w-275 mx-auto">
           <div className="shrink-0 w-64 h-64 md:w-80 md:h-80 relative select-none">
-            <div className="w-full h-full relative rounded-full border border-white/20 p-2 bg-zinc-900/30 backdrop-blur-sm">
+            <div className="w-full h-full relative rounded-full border border-white/10 p-2 bg-zinc-900/30 backdrop-blur-sm">
               <div className="w-full h-full relative rounded-full overflow-hidden">
                 <Image
                   src="/img/assets/profile.png"
