@@ -1,0 +1,133 @@
+{
+  "Navbar": {
+    "home": "Home",
+    "about": "About",
+    "skills": "Skills",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+
+  "Hero": {
+    "greeting": "Hi, I am",
+    "tagline": "Turning Ideas into Reality Through Code",
+    "cta": "Learn More"
+  },
+
+  "About": {
+    "title": "About me",
+    "subtitle": "Get to know me a little better",
+    "tabs": {
+      "bio": "Bio",
+      "experience": "Experience",
+      "education": "Education"
+    },
+    "bio": {
+      "p1": "I've been passionate about technology from an early age, and for the past {years} years, I've dedicated myself to the world of programming and software development.",
+      "p2": "I have experience developing end-to-end web applications, always prioritizing quality, security, and code maintainability.",
+      "p3": "Currently, I work as a Full Stack Developer, participating in system building, technical decisions, refactoring, and application evolution. I enjoy solving complex problems, proposing solutions, and finding ways to make systems simpler, more efficient, and ready to scale.",
+      "p4": "In the coming years, I want to keep growing technically, contribute to company growth through products that bring value to users, and at the same time, turn my own ideas into products that make an impact in the market."
+    },
+    "experiences": [
+      {
+        "title": "Web Developer",
+        "business": "CRM Soluções",
+        "period": "2023 - 2024 (1 year)",
+        "description": [
+          "Developed and scaled web applications, implementing new features and systems.",
+          "Handled end-to-end development, including frontend, backend, and databases.",
+          "Implemented performance improvements, including caching strategies to reduce unnecessary server queries.",
+          "Performed deployments in staging and production environments, alongside maintenance and bug fixing."
+        ]
+      },
+      {
+        "title": "Full Stack Developer",
+        "business": "KaBuM!",
+        "period": "2024 - Present",
+        "description": [
+          "Developed and scaled internal applications, from defining technical solutions to implementation.",
+          "Handled end-to-end frontend, backend, and database work, including microservices development.",
+          "Participated in architecture decisions, development standard definitions, and feature building.",
+          "Maintained, refactored, and evolved systems, including bug fixing and working with legacy applications."
+        ]
+      }
+    ],
+    "education": [
+      {
+        "title": "Technical Degree in Internet Computing",
+        "business": "Senac",
+        "period": "2019 - 2020",
+        "description": [
+          "Focused on web development, programming logic, databases, and software engineering.",
+          "Studied responsive development, relational database modeling, and code version control."
+        ]
+      },
+      {
+        "title": "Systems Analysis and Development",
+        "business": "Uninter",
+        "period": "2025 - 2028 (Expected)",
+        "description": [
+          "Degree focused on software project analysis, development, and management.",
+          "Studied programming logic, problem solving, and systems development.",
+          "Explored agile methodologies, software quality, and the systems lifecycle."
+        ]
+      }
+    ]
+  },
+
+  "Skills": {
+    "title": "Skills",
+    "subtitle": "Main technologies and tools I use"
+  },
+
+  "Projects": {
+    "title": "Projects",
+    "subtitle": "Check out some of the projects I've built",
+    "buttons": {
+      "video": "Video",
+      "repository": "Repository"
+    },
+    "items": {
+      "musicWebsite": {
+        "title": "Music Website",
+        "description": "A music management application where users can organize and manage their favorite songs in one place."
+      },
+      "wolfGames": {
+        "title": "Wolf Games",
+        "description": "A gaming e-commerce platform featuring a complete user journey, from product selection to checkout."
+      },
+      "userManager": {
+        "title": "User Manager",
+        "description": "A web application managing the full user lifecycle: registration, editing, profile updates, authentication, and listing."
+      },
+      "reservations": {
+        "title": "Table Reservations",
+        "description": "A restaurant reservation website allowing customers to book tables and receive confirmation via email."
+      },
+      "spotfolio": {
+        "title": "Spotfolio",
+        "description": "A SaaS platform enabling professionals to create mini-websites to showcase links, portfolios, and services."
+      },
+      "customerManager": {
+        "title": "Customer Manager",
+        "description": "An admin dashboard for managing clients, featuring registration, editing, listing, and deletion capabilities."
+      }
+    }
+  },
+
+  "Footer": {
+    "title": "Get in Touch",
+    "subtitle": "Let's Talk?",
+    "description": "If you've made it this far, feel free to reach out. I'm eager to contribute to your project and work with a team that values progress and innovation.",
+    "ctaButton": "Send a Message",
+    "ariaLabelTop": "Back to top"
+  },
+
+  "LinksPage": {
+    "tagline": "Turning ideas into reality through code.",
+    "links": {
+      "portfolio": "My Portfolio",
+      "newsletter": "Newsletter"
+    },
+    "projectsTitle": "My Projects"
+  }
+}

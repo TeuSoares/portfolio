@@ -1,0 +1,133 @@
+{
+  "Navbar": {
+    "home": "Home",
+    "about": "Sobre",
+    "skills": "Conhecimentos",
+    "projects": "Projetos",
+    "contact": "Contato"
+  },
+
+  "Hero": {
+    "greeting": "Olá, eu sou",
+    "tagline": "Transformando Ideias em Realidade Através do Código",
+    "cta": "Saiba Mais"
+  },
+
+  "About": {
+    "title": "Sobre mim",
+    "subtitle": "Conheça-me um pouco mais",
+    "tabs": {
+      "bio": "Bio",
+      "experience": "Experiência",
+      "education": "Educação"
+    },
+    "bio": {
+      "p1": "Sou entusiasta da tecnologia desde cedo e, há {years} anos venho me dedicando ao universo da programação e desenvolvimento de software.",
+      "p2": "Tenho experiência no desenvolvimento de aplicações web de ponta a ponta, sempre priorizando qualidade, segurança e manutenibilidade do código.",
+      "p3": "Atualmente, atuo como Desenvolvedor Full Stack, participando da construção de sistemas, decisões técnicas, refatorações e evolução de aplicações. Gosto de resolver problemas complexos, propor soluções e encontrar formas de tornar sistemas mais simples, eficientes e preparados para evoluir.",
+      "p4": "Para os próximos anos, quero continuar evoluindo tecnicamente, contribuir para o crescimento de empresas por meio de produtos que gerem valor para seus usuários e, ao mesmo tempo, transformar minhas próprias ideias em produtos que possam gerar impacto no mercado."
+    },
+    "experiences": [
+      {
+        "title": "Desenvolvedor Web",
+        "business": "CRM Soluções",
+        "period": "2023 - 2024 (1 ano)",
+        "description": [
+          "Desenvolvimento e evolução de aplicações web, atuando na implementação de novas funcionalidades e sistemas.",
+          "Atuação de ponta a ponta no desenvolvimento, incluindo frontend, backend e banco de dados.",
+          "Implementação de melhorias de performance, incluindo estratégias de cache para reduzir consultas desnecessárias ao servidor.",
+          "Realização de deploys em ambientes de homologação e produção, além da manutenção e correção de problemas."
+        ]
+      },
+      {
+        "title": "Desenvolvedor Full Stack",
+        "business": "KaBuM!",
+        "period": "2024 - Atualmente",
+        "description": [
+          "Desenvolvimento e evolução de aplicações internas, atuando desde a definição de soluções técnicas até a implementação.",
+          "Atuação de ponta a ponta em frontend, backend e banco de dados, com desenvolvimento de microsserviços.",
+          "Participação em decisões de arquitetura, definição de padrões de desenvolvimento e construção de novas funcionalidades.",
+          "Manutenção, refatoração e evolução de sistemas, incluindo correção de bugs e atuação em aplicações legadas."
+        ]
+      }
+    ],
+    "education": [
+      {
+        "title": "Técnico em Informática para Internet",
+        "business": "Senac",
+        "period": "2019 - 2020",
+        "description": [
+          "Formação em desenvolvimento web, lógica de programação, bancos de dados e engenharia de software.",
+          "Estudos de desenvolvimento responsivo, modelagem de bancos de dados relacionais e versionamento de código."
+        ]
+      },
+      {
+        "title": "Análise e Desenvolvimento de Sistemas",
+        "business": "Uninter",
+        "period": "2025 - 2028 (Previsão de Conclusão)",
+        "description": [
+          "Formação voltada à análise, desenvolvimento e gerenciamento de projetos de software.",
+          "Estudos de lógica de programação, resolução de problemas e desenvolvimento de sistemas.",
+          "Estudo de metodologias ágeis, qualidade de software e ciclo de vida de sistemas."
+        ]
+      }
+    ]
+  },
+
+  "Skills": {
+    "title": "Conhecimentos",
+    "subtitle": "Principais tecnologias e ferramentas que utilizo"
+  },
+
+  "Projects": {
+    "title": "Projetos",
+    "subtitle": "Confira alguns dos projetos que já desenvolvi",
+    "buttons": {
+      "video": "Vídeo",
+      "repository": "Repositório"
+    },
+    "items": {
+      "musicWebsite": {
+        "title": "Site de Músicas",
+        "description": "Sistema de gerenciamento de músicas, onde o usuário pode gerenciar suas músicas favoritas em apenas um lugar."
+      },
+      "wolfGames": {
+        "title": "Wolf Games",
+        "description": "Um E-Commerce Gamer, onde foi desenvolvido todo o fluxo do usuário da escolha do produto até a compra."
+      },
+      "userManager": {
+        "title": "Gerenciador de Usuários",
+        "description": "Um sistema web que realiza todo o fluxo de um usuário: Cadastro, Edição, Atualização, Autenticação e Listagem."
+      },
+      "reservations": {
+        "title": "Fazer reservas",
+        "description": "Site de reservas para um restaurante. O usuário pode fazer reservas de mesa e receber a confirmação por e-mail."
+      },
+      "spotfolio": {
+        "title": "Spotfolio",
+        "description": "Um SaaS onde o usuário pode ter um mini site profissional para divulgar seus links, portfólio e serviços oferecidos."
+      },
+      "customerManager": {
+        "title": "Gerenciador de Clientes",
+        "description": "Uma área administrativa para o usuário conseguir gerenciar seus clientes: Cadastro, Edição, Listagem e Exclusão."
+      }
+    }
+  },
+
+  "Footer": {
+    "title": "Entre em Contato",
+    "subtitle": "Vamos Conversar?",
+    "description": "Se você chegou até aqui, não deixe de entrar em contato comigo. Estou ansioso para contribuir no seu projeto e com um time que valoriza o progresso e a inovação.",
+    "ctaButton": "Enviar uma mensagem",
+    "ariaLabelTop": "Voltar para o topo"
+  },
+
+  "LinksPage": {
+    "tagline": "Transformo ideias em realidade através do código.",
+    "links": {
+      "portfolio": "Meu Portfólio",
+      "newsletter": "Newsletter"
+    },
+    "projectsTitle": "Meus Projetos"
+  }
+}

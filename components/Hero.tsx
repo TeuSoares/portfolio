@@ -2,10 +2,12 @@
 
 import Image from "next/image";
 import { ArrowDown } from "lucide-react";
+import { useTranslations } from "next-intl";
 import { useScroll } from "../hooks/useScroll";
 
 export default function Hero() {
   const { scrollToSection } = useScroll();
+  const t = useTranslations("Hero");
 
   return (
     <div
@@ -24,7 +26,7 @@ export default function Hero() {
       <div className="max-w-285 mx-auto px-6 w-full text-center z-20">
         <div className="max-w-3xl mx-auto">
           <h3 className="text-zinc-300 mb-3 text-[1rem] uppercase tracking-[0.2em] font-medium">
-            Olá, eu sou
+            {t("greeting")}
           </h3>
 
           <h1 className="text-brand mb-4 text-5xl md:text-[5rem] font-extrabold leading-none tracking-tight drop-shadow-sm">
@@ -32,7 +34,7 @@ export default function Hero() {
           </h1>
 
           <h2 className="text-zinc-300 text-lg md:text-[1.2rem] max-w-xl mx-auto mb-6 font-normal leading-relaxed">
-            Transformando Ideias em Realidade Através do Código
+            {t("tagline")}
             <span className="text-brand font-bold">.</span>
           </h2>
 
@@ -40,7 +42,7 @@ export default function Hero() {
             onClick={() => scrollToSection("about")}
             className="border border-white text-white rounded-[5px] px-10 py-3 mt-4 font-semibold text-[0.95rem] bg-transparent hover:bg-brand hover:border-brand hover:shadow-[0_0_20px_rgba(var(--brand-rgb),0.3)] transition-all duration-300 cursor-pointer inline-flex items-center gap-2.5 justify-center mx-auto focus:outline-none group"
           >
-            Saiba Mais
+            {t("cta")}
             <ArrowDown
               size={18}
               className="animate-bounce group-hover:translate-y-0.5 transition-transform duration-300"

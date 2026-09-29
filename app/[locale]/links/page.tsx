@@ -1,12 +1,13 @@
 import { CodeXml, ArrowUpRight, Mail, LayoutGrid } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 import ProfileImage from "@/components/ui/ProfileImage";
 import SocialLinks from "@/components/ui/SocialLinks";
 import { ElementType } from "react";
 
 interface NavLink {
-  label: string;
+  labelKey: string;
   href: string;
   icon?: ElementType<{ size?: number; className?: string }>;
 }
@@ -20,9 +21,9 @@ interface ProjectItem {
 }
 
 const LINKS: NavLink[] = [
-  { label: "Meu Portfólio", href: "/", icon: LayoutGrid },
+  { labelKey: "portfolio", href: "/", icon: LayoutGrid },
   {
-    label: "Newsletter",
+    labelKey: "newsletter",
     href: "https://mateusoaresz.substack.com/",
     icon: Mail,
   },
@@ -31,6 +32,8 @@ const LINKS: NavLink[] = [
 const PROJECTS: ProjectItem[] = [];
 
 export default function LinksPage() {
+  const t = useTranslations("LinksPage");
+
   return (
     <main className="max-w-xl mx-auto px-6 py-12 min-h-screen">
       <header className="bg-bg-secondary p-8 rounded-3xl border border-white/10 flex flex-col items-center text-center space-y-4 mb-8 backdrop-blur-sm">
@@ -46,7 +49,7 @@ export default function LinksPage() {
               size={16}
               className="text-brand hidden min-[500px]:block"
             />
-            Transformo ideias em realidade através do código.
+            {t("tagline")}
           </p>
         </div>
         <SocialLinks
@@ -72,7 +75,9 @@ export default function LinksPage() {
                 <div className="p-2 bg-zinc-950 rounded-xl border border-white/10 text-brand">
                   {link.icon && <link.icon size={20} />}
                 </div>
-                <span className="font-semibold">{link.label}</span>
+                <span className="font-semibold">
+                  {t(`links.${link.labelKey}`)}
+                </span>
                 <ArrowUpRight
                   size={16}
                   className="ml-auto opacity-0 group-hover:opacity-100 transition-opacity"
@@ -85,7 +90,7 @@ export default function LinksPage() {
 
       {PROJECTS.length > 0 && (
         <section className="space-y-4">
-          <h2 className="text-xl font-bold px-1">Meus Projetos</h2>
+          <h2 className="text-xl font-bold px-1">{t("projectsTitle")}</h2>
           <div className="grid grid-cols-1 gap-4">
             {PROJECTS.map((project, index) => {
               const Icon = project.icon;
