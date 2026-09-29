@@ -1,23 +1,22 @@
 "use client";
 
 import { Mail, ChevronUp } from "lucide-react";
+import { useTranslations } from "next-intl";
 import SectionTitle from "./ui/SectionTitle";
 import { useScroll } from "../hooks/useScroll";
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
-
   const { scrollToTop } = useScroll();
+  const t = useTranslations("Footer");
 
   return (
     <footer id="contact" className="bg-bg-secondary w-full">
       <div className="max-w-155 mx-auto text-center py-24 px-4">
-        <SectionTitle title="Entre em Contato" subtitle="Vamos Conversar?" />
+        <SectionTitle title={t("title")} subtitle={t("subtitle")} />
 
         <p className="text-zinc-300 text-[1rem] leading-relaxed mb-8">
-          Se você chegou até aqui, não deixe de entrar em contato comigo. Estou
-          ansioso para contribuir no seu projeto e com um time que valoriza o
-          progresso e a inovação.
+          {t("description")}
         </p>
 
         <div className="inline-block mt-4">
@@ -28,7 +27,7 @@ export default function Footer() {
             <span className="hidden min-[300px]:block shrink-0">
               <Mail size={18} />
             </span>
-            Enviar uma mensagem
+            {t("ctaButton")}
           </a>
         </div>
       </div>
@@ -46,7 +45,7 @@ export default function Footer() {
               type="button"
               onClick={scrollToTop}
               className="hidden min-[300px]:flex bg-brand hover:bg-brand-hover text-white w-8 h-8 md:w-10 md:h-10 rounded-[5px] cursor-pointer transition-colors duration-300 items-center justify-center focus:outline-none shrink-0"
-              aria-label="Voltar para o topo"
+              aria-label={t("ariaLabelTop")}
             >
               <ChevronUp className="size-4 md:size-5" />
             </button>

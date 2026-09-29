@@ -17,6 +17,7 @@ import {
   SiMysql,
   SiPostgresql,
 } from "react-icons/si";
+import { useTranslations } from "next-intl";
 import SectionTitle from "./ui/SectionTitle";
 
 interface Skill {
@@ -41,16 +42,15 @@ const SKILLS_DATA: Skill[] = [
 ];
 
 export default function Skills() {
+  const t = useTranslations("Skills");
+
   return (
     <section
       id="skills"
       className="bg-bg-secondary py-24 border-b border-white/10"
     >
       <div className="max-w-285 mx-auto px-4">
-        <SectionTitle
-          title="Conhecimentos"
-          subtitle="Principais tecnologias e ferramentas que utilizo"
-        />
+        <SectionTitle title={t("title")} subtitle={t("subtitle")} />
 
         <div className="flex flex-wrap justify-center gap-6 max-w-225 mx-auto">
           {SKILLS_DATA.map((skill, idx) => {

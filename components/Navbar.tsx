@@ -3,21 +3,24 @@
 import { useState, useEffect } from "react";
 import Image from "next/image";
 import { Menu, X } from "lucide-react";
+import { useTranslations } from "next-intl";
 import { useScroll } from "../hooks/useScroll";
 import SocialLinks from "./ui/SocialLinks";
-
-const NAV_LINKS = [
-  { id: "home", label: "Home" },
-  { id: "about", label: "Sobre" },
-  { id: "skills", label: "Conhecimentos" },
-  { id: "projects", label: "Projetos" },
-  { id: "contact", label: "Contato" },
-];
 
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const { scrollToSection } = useScroll();
+
+  const t = useTranslations("Navbar");
+
+  const NAV_LINKS = [
+    { id: "home", label: t("home") },
+    { id: "about", label: t("about") },
+    { id: "skills", label: t("skills") },
+    { id: "projects", label: t("projects") },
+    { id: "contact", label: t("contact") },
+  ];
 
   useEffect(() => {
     const handleScroll = () => setIsScrolled(window.scrollY > 0);
